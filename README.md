@@ -23,7 +23,7 @@ Make sure to remove the import statement in main.js. (import "./assets/css/globa
 
 The last step is to add the plugin to gridsome, in the gridsome.config.js file in the plugins: 
 ```js
-[ { 
+plugins: [ { 
     use: "gridsome-plugin-tailwindcss" 
 } ]
 ```
