@@ -1,0 +1,14 @@
+{
+  "name": "JAMSTACK-BLOG",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "markdown-it": "^11.0.1",
+    "tailwindcss": "^1.8.12"
+  }
+}
