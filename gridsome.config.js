@@ -8,14 +8,26 @@ const tailwindcss = require("tailwindcss")
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: [],
+  plugins: [
+    {
+      user: "@gridsome/source-contentful",
+      options: {
+        space: process.env.CONTENTFUL_SPACE,
+        accessToken: process.env.CONTENTFUL_TOKEN,
+        host: "cdn.contentful.com",
+        environment: process.env.CONTENTFUL_ENVIRONMENT,
+        typename: "Contentful"
+      },
+      use: "gridsome-plugin-tailwindcss"
+    }
+  ],
   css: {
     loaderoptions: {
       postcss: {
         plugins: [
           tailwindcss
-        ],
-      },
-    },
-  },
+        ]
+      }
+    }
+  }
 }
