@@ -21,7 +21,11 @@ use this plugin (npm install -D gridsome-plugin-tailwindcss) to get tailwindcss 
 
 Make sure to remove the import statement in main.js. (import "./assets/css/global.css" Then rename global.css to tailwind.css and move it to main directory.  
 
-The last step is to add the plugin to gridsome, in the gridsome.config.js file in the plugins: [ { use: "gridsome-plugin-tailwindcss"
-
-## Yarn Buigs
+The last step is to add the plugin to gridsome, in the gridsome.config.js file in the plugins: 
+```js
+[ { 
+    use: "gridsome-plugin-tailwindcss" 
+} ]
+```
+## Yarn Bugs
 Currently, Yarn has a lot of problems with gridsome, it's better to use NPM for everything.
