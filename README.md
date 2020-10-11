@@ -13,4 +13,15 @@ This is the project you get when you run `gridsome create new-project`.
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-# BE CAREFUL -> tailwindCSS changed the way it interacts with Gridsome. Also, Yarn has a lot of problems with gridsome, it's better to use NPM for everything.
+# BE CAREFUL -> 
+## TailwindCSS Update
+tailwindCSS changed the way it interacts with Gridsome. 
+
+use this plugin (npm install -D gridsome-plugin-tailwindcss) to get tailwindcss working with gridsome.  
+
+Make sure to remove the import statement in main.js. (import "./assets/css/global.css" Then rename global.css to tailwind.css and move it to main directory.  
+
+The last step is to add the plugin to gridsome, in the gridsome.config.js file in the plugins: [ { use: "gridsome-plugin-tailwindcss"
+
+## Yarn Buigs
+Currently, Yarn has a lot of problems with gridsome, it's better to use NPM for everything.
