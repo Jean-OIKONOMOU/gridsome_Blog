@@ -10,15 +10,23 @@ module.exports = {
   siteName: 'Gridsome',
   plugins: [
     {
-      user: "@gridsome/source-contentful",
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: true,
+        shouldTimeTravel: true
+      }
+    },
+    {
+      use: '@gridsome/source-contentful',
       options: {
         space: process.env.CONTENTFUL_SPACE,
         accessToken: process.env.CONTENTFUL_TOKEN,
-        host: "cdn.contentful.com",
+        host: 'cdn.contentful.com',
         environment: process.env.CONTENTFUL_ENVIRONMENT,
-        typename: "Contentful"
-      },
-      use: "gridsome-plugin-tailwindcss"
+        typename: 'Contentful'
+      }
     }
   ],
   css: {

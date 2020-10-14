@@ -1,0 +1,15 @@
+<template>
+    <Layout>
+        <div>
+            <div>
+                <h1></h1>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </Layout>
+</template>
+

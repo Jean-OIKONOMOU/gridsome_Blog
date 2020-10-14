@@ -6,14 +6,14 @@
         <div>
           <ul class="list-reset md:flex md:items-center">
             <li class="md:ml-4">
-              <g-link class="nav__link block no-underline 
+              <g-link class="transition-colors duration-500 ease-in-out nav__link block no-underline 
               py-2 hover:text-darkgray md:border-none md:p-0"
               to="/">Home</g-link>
             </li>
             <li class="md:ml-4">
-              <g-link class="nav__link block no-underline 
+              <g-link class="transition-colors duration-500 ease-in-out nav__link block no-underline 
               py-2 hover:text-darkgray text-grey-darkest md:border-none md:p-0"
-              to="/about/">About</g-link>
+              to="/about">About</g-link>
             </li>
             <li class="md:ml-4">
 
@@ -28,7 +28,7 @@
     <!--- END NAVIGATION --->
     <slot/> <!--- THIS ALLOWS FOR THE OTHER PAGES TO SLOT INTO THIS PLACE --->
 
-    <footer class="mt-20 font-light text-gray w-full text-center p-4 text-primary">
+    <footer class="font-light text-gray w-full text-center p-4 text-primary">
       <p class="text-2xl">
         Copyright YOUR NAME 2020
       </p>
