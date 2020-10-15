@@ -12,7 +12,8 @@ module.exports = {
       background: '#F7FAFC',
       white: '#FFF',
       darkgray: '#2D3748',
-      lightgray: '#A0AEC0'
+      lightgray: '#A0AEC0',
+      isActive: '#000'
     },
     screens: {
       'xs': {'max': '639px'}, 
