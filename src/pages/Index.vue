@@ -1,7 +1,7 @@
-<template class="example">
+<template>
   <Layout>
-    <div class="w-100 bg-blogbg"> <!--applies the bakground color-->
-    <div class="xs:py-12 py-7">
+    <div class="example w-100 bg-blogbg"> <!--applies the bakground color-->
+    <div class="example xs:py-12 py-7">
       <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--- left column --->
         <div class="flex flex-col w-full md:w-2/5 justify-center justify-between text-center md:text-left pr-1 pb-10 text-primary">
@@ -33,15 +33,14 @@ export default {
 </script>
 
 <style>
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+html::-webkit-scrollbar, *::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;
 }
 
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for IE, Edge and Firefox */
+html, * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>
 

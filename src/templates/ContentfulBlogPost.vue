@@ -1,4 +1,4 @@
-<template class="example">
+<template>
     <Layout>
       <div class="w-100 bg-blogbg">
           <div class="container justify-center content-center grid grid-cols-1 py-10 px-auto markdown px-6 xl:px-12 w-full max-w-3xl mx-auto xl:w-4/4">
@@ -77,13 +77,13 @@ html {
   list-style-position: inside;
 }
 
-.example::-webkit-scrollbar {
+html::-webkit-scrollbar, *::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;
 }
 
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for IE, Edge and Firefox */
+html, * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>

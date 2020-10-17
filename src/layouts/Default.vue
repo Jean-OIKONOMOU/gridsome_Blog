@@ -1,4 +1,4 @@
-<template class="example">
+<template>
   <div class="flex flex-col h-screen justify-between bg-blogbg">
     <header class="md:flex md:items-centers 
     md:justify-around p-4 shadow-lg md:pb-4 border-b border-primary bg-blogbg">
@@ -77,14 +77,15 @@ query {
   width:100%;
 }
 
-.example::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar, *::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;
 }
 
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for IE, Edge and Firefox */
+html, * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>
 

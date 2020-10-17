@@ -1,4 +1,4 @@
-<template class="example">
+<template>
   <Layout>
     <div class="w-100 bg-blogbg"> <!--applies the bakground color-->
     <div class="container justify-center content-center gird grid-cols-1 py-10 px-auto markdown px-6 xl:px-12 w-full max-w-3xl mx-auto xl:w-4/4">
@@ -25,14 +25,13 @@ export default {
 </script>
 
 <style>
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+html::-webkit-scrollbar, *::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;
 }
 
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for IE, Edge and Firefox */
+html, * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>

@@ -1,6 +1,6 @@
-<template class="example">
+<template>
     <Layout>
-        <div class="w-100  bg-blogbg">
+        <div class="w-100 bg-blogbg">
             <div class="bg-blogbg container grid grid-cols-1 justify-center px-auto mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <div class="mx-0 px-auto max-w-xl mx-auto">
                 <h1 class="text-2xl font-bold leading-tight mb-6 mt-4 text-center text-primary">Blog</h1>
@@ -48,13 +48,13 @@ export default {
 
 <style>
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+html::-webkit-scrollbar, *::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;
 }
 
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for IE, Edge and Firefox */
+html, * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>
