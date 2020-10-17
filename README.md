@@ -1,19 +1,18 @@
-# Default starter for Gridsome
+# My Gridsome blog
 
-This is the project you get when you run `gridsome create new-project`.
+I always wanted to try out VueJS but never got around to doing it. 
 
-### 1. Install Gridsome CLI tool if you don't have
+Now that I have a little bit of time I decided to use the new framework based on VueJS : Gridsome.
 
-`npm install --global @gridsome/cli`
+I'm creating a blog because I'm currently learning to be an RPGLE developer. A blog is a really good educational tool when learning something. 
 
-### 2. Create a Gridsome project
+# Other technologies used
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+- TailwindCSS
+- Contentful
+- Markdown-it
 
-# BE CAREFUL -> 
+# BE CAREFUL
 ## TailwindCSS Update
 tailwindCSS changed the way it interacts with Gridsome. 
 
