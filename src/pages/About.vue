@@ -19,7 +19,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
+    title: 'About'
   }
 }
 </script>
