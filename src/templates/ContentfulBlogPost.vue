@@ -1,12 +1,13 @@
-<template>
+<template class="example">
     <Layout>
-        <div class="container justify-center content-center gird grid-cols-1 py-10 px-auto markdown px-6 xl:px-12 w-full max-w-3xl mx-auto xl:w-4/4">
-                <h1 class="text-2xl mb-2 text-center text-primary"> {{$page.post.title}} </h1>
-                <p class="font-light text-sm text-center text-gray mb-6"> Posted on {{$page.post.date}} </p>
-                <div id="body" class="max-auto-sm text-left" v-html="body" />
-                <div class="pt-20">
-                <!-- <vue-disqus shortname="my-blog-2hm0wo476s" :identifier="$page.post.id"></vue-disqus> -->
-                </div>
+      <div class="w-100 bg-blogbg">
+          <div class="container justify-center content-center grid grid-cols-1 py-10 px-auto markdown px-6 xl:px-12 w-full max-w-3xl mx-auto xl:w-4/4">
+            <h1 class="text-2xl mb-2 text-center text-primary"> {{$page.post.title}} </h1>
+            <p class="font-light text-sm text-center text-white mb-6"> Posted on {{$page.post.date}} </p>
+            <div id="body" class="max-auto-sm text-left" v-html="body" />
+            <div class="pt-20">
+            </div>
+          </div>
         </div>
     </Layout>
 </template>
@@ -36,8 +37,12 @@ query Post ($path: String!) {
 </script>
 
 <style>
+html {
+  overflow-y: overlay;
+}
+
 #body {
-  color: #2d3748;
+  color: rgb(64, 255, 241);
 }
 #body h1 {
   font-size: 20px;
@@ -49,7 +54,7 @@ query Post ($path: String!) {
 }
 #body pre {
   background-color: #2d3748;
-  color: #a0aec0;
+  color: rgb(64, 255, 241);
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
@@ -70,5 +75,15 @@ query Post ($path: String!) {
   font-size: 20px;
   list-style-type: decimal;
   list-style-position: inside;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
+
+.example {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

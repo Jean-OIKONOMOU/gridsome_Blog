@@ -6,14 +6,13 @@ module.exports = {
   purge: [],
   theme: {
     colors: {
-      primary: '#00BFA6',
+      primary: 'rgb(64, 255, 241)',
       primarydark: '#2C7A7B',
-      blogbg: '#E2E8F0',
+      blogbg: '#181a1b',
       background: '#F7FAFC',
       white: '#FFF',
       darkgray: '#2D3748',
-      lightgray: '#A0AEC0',
-      isActive: '#000'
+      lightgray: '#A0AEC0'
     },
     screens: {
       'xs': {'max': '767px'}, 
