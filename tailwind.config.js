@@ -16,7 +16,7 @@ module.exports = {
       isActive: '#000'
     },
     screens: {
-      'xs': {'max': '639px'}, 
+      'xs': {'max': '767px'}, 
       // => @media (max-width: 639px) { ... } this makes it easier to handle smartphones
       
       'sm': '640px',

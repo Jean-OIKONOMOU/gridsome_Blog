@@ -8,6 +8,9 @@ const tailwindcss = require("tailwindcss")
 
 module.exports = {
   siteName: 'Gridsome',
+  templates: {
+    ContentfulBlogPost: '/blog/:slug'
+  },
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
