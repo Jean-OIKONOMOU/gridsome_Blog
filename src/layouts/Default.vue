@@ -5,14 +5,12 @@
       <nav class="flex flex-wrap item-center justify-around text-primary">
         <div>
           <ul class="list-reset md:flex md:items-center">
-            <li class="md:ml-4 nav_li">
-              <g-link active-class exact-active-class="isActive" class="transition-colors duration-500 ease-in-out nav__link block 
-              py-2 md:p-0"
+            <li class="md:ml-4 nav">
+              <g-link active-class exact-active-class="isActive" class="transition-colors duration-500 ease-in-out nav__link block py-2 md:p-0"
               to="/">Home</g-link>
             </li>
-            <li class="md:ml-4 nav_li">
-              <g-link active-class exact-active-class="isActive" class="transition-colors duration-500 ease-in-out nav__link block 
-              py-2 md:p-0"
+            <li class="md:ml-4 nav">
+              <g-link active-class exact-active-class="isActive" class="transition-colors duration-500 ease-in-out nav__link block py-2 md:p-0"
               to="/about">About</g-link>
             </li>
             <li class="md:ml-4">
@@ -49,10 +47,10 @@ query {
 </template>
 
 <style>
-.nav_li {
+.nav {
   position: relative;
 }
-.nav_li a:after {
+.nav a:after {
   content: '';
   display: block;
   border-bottom: 3px solid rgb(64, 255, 241);
@@ -63,11 +61,11 @@ query {
   transition: 100ms ease;
 }
 
-.nav_li a:hover:after { 
+.nav a:hover:after { 
   width: 100%; 
 }
 
-.isActive:after {
+.nav .isActive:after {
   content: '';
   display: block;
   border-bottom: 3px solid rgb(64, 255, 241);
